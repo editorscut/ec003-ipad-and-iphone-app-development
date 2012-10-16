@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="EER-LT-tar">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wS5-fw-P76">
+            <objects>
+                <navigationController id="iPF-tP-FjO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="00B-x8-qqz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YwV-Qo-DZQ" kind="relationship" relationship="rootViewController" id="lzz-Qh-9fd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVC-fr-nzk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="-1046"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="gQV-Dv-JGe">
+            <objects>
+                <splitViewController id="EER-LT-tar" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="iPF-tP-FjO" kind="relationship" relationship="masterViewController" id="YMo-nv-sWB"/>
+                        <segue destination="jlS-dG-dTo" kind="relationship" relationship="detailViewController" id="AzD-M3-y5r"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LK-3R-0Rc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1671" y="-1046"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hcG-q9-Cyb">
+            <objects>
+                <navigationController id="jlS-dG-dTo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="i9Z-r2-FvP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Q6b-nc-B43" kind="relationship" relationship="rootViewController" id="hqL-3I-ehl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6q2-fI-Bi1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="-168"/>
+        </scene>
+        <!--Nav View Controller - Choices-->
+        <scene sceneID="OHC-Et-AMT">
+            <objects>
+                <viewController id="YwV-Qo-DZQ" customClass="SCSNavViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qkQ-Dt-ezH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yL-zq-tnO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="6mc-j9-4qO"/>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="oug-kz-q9p"/>
+                                    <constraint firstAttribute="height" constant="44" type="user" id="zV4-S5-kXU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample D">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sampleDPressed:" destination="YwV-Qo-DZQ" eventType="touchUpInside" id="aTR-2h-YsX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ve-af-ExO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="KqD-dh-Kms"/>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="V0R-dG-Nyi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" type="user" id="dCj-83-7tZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample E">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sampleEPressed:" destination="YwV-Qo-DZQ" eventType="touchUpInside" id="xvK-uv-Ict"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnq-AW-V4Y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="2nd-5s-7UQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" type="user" id="2sn-up-PeQ"/>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="Dkp-eZ-mgc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample F">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sampleFPressed:" destination="YwV-Qo-DZQ" eventType="touchUpInside" id="cvQ-0F-rNk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ve-af-ExO" firstAttribute="centerY" secondItem="qkQ-Dt-ezH" secondAttribute="centerY" type="default" id="1cI-7n-KoJ"/>
+                            <constraint firstItem="nnq-AW-V4Y" firstAttribute="top" secondItem="5ve-af-ExO" secondAttribute="bottom" constant="40" type="user" id="4Hr-tH-qcf"/>
+                            <constraint firstItem="3yL-zq-tnO" firstAttribute="leading" secondItem="qkQ-Dt-ezH" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="K3g-IL-HWz"/>
+                            <constraint firstItem="5ve-af-ExO" firstAttribute="top" secondItem="3yL-zq-tnO" secondAttribute="bottom" constant="40" type="user" id="P5L-US-unK"/>
+                            <constraint firstItem="5ve-af-ExO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3yL-zq-tnO" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="SVo-Yh-gRM"/>
+                            <constraint firstItem="nnq-AW-V4Y" firstAttribute="leading" secondItem="qkQ-Dt-ezH" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="Wmm-dH-De3"/>
+                            <constraint firstItem="nnq-AW-V4Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5ve-af-ExO" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="bwN-KX-wFA"/>
+                            <constraint firstItem="5ve-af-ExO" firstAttribute="leading" secondItem="qkQ-Dt-ezH" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="isW-E6-ou8"/>
+                            <constraint firstAttribute="centerX" secondItem="5ve-af-ExO" secondAttribute="centerX" type="user" id="jfk-Ns-wgv"/>
+                            <constraint firstAttribute="centerX" secondItem="nnq-AW-V4Y" secondAttribute="centerX" type="user" id="pQ2-bV-pyb"/>
+                            <constraint firstAttribute="centerX" secondItem="3yL-zq-tnO" secondAttribute="centerX" type="user" id="shu-N6-8WL"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choices" id="VXh-1L-xax"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8g-AE-cIF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="-1046"/>
+        </scene>
+        <!--Nav Detail View Controller - Letter-->
+        <scene sceneID="HgR-JZ-793">
+            <objects>
+                <viewController storyboardIdentifier="NavDetailVC" id="Q6b-nc-B43" customClass="SCSNavDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0oX-Mm-DxJ">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncv-WF-d9w">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="k69-Wf-qsg"/>
+                                    <constraint firstAttribute="width" constant="160" id="kIF-7w-LJg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Ncv-WF-d9w" secondAttribute="centerX" type="user" id="GvJ-Tl-ufJ"/>
+                            <constraint firstAttribute="centerY" secondItem="Ncv-WF-d9w" secondAttribute="centerY" type="user" id="ZhH-ye-fls"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Letter" id="Oye-w3-qXK"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="displayedLetterLabel" destination="Ncv-WF-d9w" id="HhP-DS-goy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rx8-tb-2z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="-168"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SCSNavDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SCSNavDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="displayedLetterLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SCSNavViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SCSNavViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sampleDPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="sampleEPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="sampleFPressed:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

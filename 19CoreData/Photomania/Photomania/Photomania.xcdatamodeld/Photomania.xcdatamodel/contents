@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SCSPhoto" representedClassName="SCSPhoto" syncable="YES">
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unique" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="whoTook" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SCSPhotographer" inverseName="photos" inverseEntity="SCSPhotographer" syncable="YES"/>
+    </entity>
+    <entity name="SCSPhotographer" representedClassName="SCSPhotographer" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SCSPhoto" inverseName="whoTook" inverseEntity="SCSPhoto" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SCSPhotographer" positionX="160" positionY="192" width="128" height="73"/>
+        <element name="SCSPhoto" positionX="376" positionY="153" width="128" height="118"/>
+    </elements>
+</model>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="SCSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWq-Pn-OzH">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="4WN-xw-eVF"/>
+                                </connections>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYw-2g-Q3u">
+                                <items>
+                                    <navigationItem title="CS 193P" id="js3-yZ-E9h">
+                                        <barButtonItem key="leftBarButtonItem" enabled="NO" systemItem="done" id="5zS-Wb-g44">
+                                            <connections>
+                                                <action selector="goBack" destination="eWq-Pn-OzH" id="qEr-gt-LXM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ezI-QR-Ryg"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bYw-2g-Q3u" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="JbP-Q4-nN9"/>
+                            <constraint firstItem="eWq-Pn-OzH" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Jcs-Cv-21t"/>
+                            <constraint firstItem="ezI-QR-Ryg" firstAttribute="centerY" secondItem="bYw-2g-Q3u" secondAttribute="centerY" type="default" id="LMo-GD-GNo"/>
+                            <constraint firstItem="bYw-2g-Q3u" firstAttribute="bottom" secondItem="eWq-Pn-OzH" secondAttribute="top" type="default" id="VDy-D7-pJO"/>
+                            <constraint firstItem="eWq-Pn-OzH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="45" type="user" id="Y72-pa-lUP"/>
+                            <constraint firstItem="bYw-2g-Q3u" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="gmy-PH-9uC"/>
+                            <constraint firstAttribute="trailing" secondItem="ezI-QR-Ryg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="k4v-0g-Rby"/>
+                            <constraint firstItem="eWq-Pn-OzH" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="mzF-x9-wpG"/>
+                            <constraint firstItem="eWq-Pn-OzH" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="usZ-WQ-UFm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ezI-QR-Ryg" id="VVX-NV-Np7"/>
+                        <outlet property="doneButton" destination="5zS-Wb-g44" id="bda-Yq-sRg"/>
+                        <outlet property="webView" destination="eWq-Pn-OzH" id="Sjg-AL-NJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

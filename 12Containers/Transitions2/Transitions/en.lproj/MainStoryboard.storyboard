@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Q4-Ac-S2h">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - A - C-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="SCSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gPN-wU-p2c">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFJ-g2-3Ei">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" type="user" id="p7E-IW-ZkF"/>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="zaO-2B-Cen"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample A">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sampleAButtonPressed:" destination="2" eventType="touchUpInside" id="VAu-L0-uR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdb-o5-n1x">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="QdP-CP-xgk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" type="user" id="t5m-1f-oNV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample B">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sampleBButtonPressed:" destination="2" eventType="touchUpInside" id="teu-eq-cN1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qr-M8-f1p">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="DHh-4z-TNG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" type="user" id="FSe-kr-MNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample C">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fdb-o5-n1x" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PFJ-g2-3Ei" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="2kc-nv-Bk6"/>
+                            <constraint firstAttribute="centerX" secondItem="Fdb-o5-n1x" secondAttribute="centerX" type="user" id="5uf-Fj-x3b"/>
+                            <constraint firstItem="Fdb-o5-n1x" firstAttribute="leading" secondItem="gPN-wU-p2c" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="6rR-Af-Vug"/>
+                            <constraint firstItem="PFJ-g2-3Ei" firstAttribute="leading" secondItem="gPN-wU-p2c" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="DT5-iB-36z"/>
+                            <constraint firstAttribute="centerX" secondItem="PFJ-g2-3Ei" secondAttribute="centerX" type="user" id="Gy5-uu-pSU"/>
+                            <constraint firstItem="PFJ-g2-3Ei" firstAttribute="top" secondItem="gPN-wU-p2c" secondAttribute="top" constant="116" id="WTm-HW-szT"/>
+                            <constraint firstAttribute="centerX" secondItem="6qr-M8-f1p" secondAttribute="centerX" type="user" id="aFE-eb-whn"/>
+                            <constraint firstItem="6qr-M8-f1p" firstAttribute="leading" secondItem="gPN-wU-p2c" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="i0N-iM-C9U"/>
+                            <constraint firstAttribute="bottom" secondItem="6qr-M8-f1p" secondAttribute="bottom" constant="117" id="ikP-l9-qJR"/>
+                            <constraint firstItem="6qr-M8-f1p" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Fdb-o5-n1x" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="tRu-tj-eod"/>
+                            <constraint firstItem="Fdb-o5-n1x" firstAttribute="centerY" secondItem="gPN-wU-p2c" secondAttribute="centerY" type="default" id="uDY-Xg-REy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="A - C" id="RFN-u5-zVy"/>
+                    <connections>
+                        <segue destination="8nZ-5K-Ofv" kind="modal" identifier="segueB" id="TKa-dw-oIx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="-1081"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ibS-c5-6kf">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="8nZ-5K-Ofv" customClass="SCSDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8UB-nF-AXa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4Q-gD-0kc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="WEh-Fk-8WS"/>
+                                    <constraint firstAttribute="height" constant="62" id="cD1-0A-u2j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpp-KK-hAR">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="8nZ-5K-Ofv" eventType="touchUpInside" id="SWK-Cb-45X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="F4Q-gD-0kc" secondAttribute="centerX" type="user" id="3Cq-Ec-eFK"/>
+                            <constraint firstAttribute="centerX" secondItem="Wpp-KK-hAR" secondAttribute="centerX" type="user" id="4vw-6a-ZoQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Wpp-KK-hAR" secondAttribute="bottom" constant="70" id="A3r-VA-Bas"/>
+                            <constraint firstItem="F4Q-gD-0kc" firstAttribute="top" secondItem="8UB-nF-AXa" secondAttribute="top" constant="134" id="h5Y-j7-PvF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YET-2P-s14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-1081"/>
+        </scene>
+        <!--Nav View Controller - Choices-->
+        <scene sceneID="qye-Oh-MD3">
+            <objects>
+                <viewController id="h40-jV-nyT" customClass="SCSNavViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VOd-vi-z6H">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-UD-ZQt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="bfT-JW-Ggl"/>
+                                    <constraint firstAttribute="height" constant="44" type="user" id="lrI-qe-W3Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample D">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YuW-Iy-i0Q" kind="push" identifier="segueD" id="ztY-eb-72j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-aZ-hxj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="WCc-HR-okC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" type="user" id="myT-a6-jNC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample E">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YuW-Iy-i0Q" kind="push" identifier="segueE" id="csd-H4-vZU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebk-I4-P88">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" type="user" id="e5h-Cs-Su6"/>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="fSd-OP-1c9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Sample F">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YuW-Iy-i0Q" kind="push" identifier="segueF" id="Caj-Ek-CH6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JJ8-aZ-hxj" firstAttribute="leading" secondItem="VOd-vi-z6H" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="487-5O-RwC"/>
+                            <constraint firstItem="JJ8-aZ-hxj" firstAttribute="centerY" secondItem="VOd-vi-z6H" secondAttribute="centerY" type="default" id="4DT-Uy-uDe"/>
+                            <constraint firstItem="ebk-I4-P88" firstAttribute="top" secondItem="JJ8-aZ-hxj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="57K-7B-Loh"/>
+                            <constraint firstAttribute="centerX" secondItem="JJ8-aZ-hxj" secondAttribute="centerX" type="user" id="QNJ-HE-fSM"/>
+                            <constraint firstItem="RWv-UD-ZQt" firstAttribute="leading" secondItem="VOd-vi-z6H" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="Suu-yf-0kJ"/>
+                            <constraint firstItem="ebk-I4-P88" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JJ8-aZ-hxj" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="UMA-cv-RIb"/>
+                            <constraint firstItem="JJ8-aZ-hxj" firstAttribute="top" secondItem="RWv-UD-ZQt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ZEb-XN-6Ns"/>
+                            <constraint firstAttribute="centerX" secondItem="RWv-UD-ZQt" secondAttribute="centerX" type="user" id="cuW-rG-930"/>
+                            <constraint firstItem="ebk-I4-P88" firstAttribute="leading" secondItem="VOd-vi-z6H" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="dmN-5p-lb1"/>
+                            <constraint firstItem="JJ8-aZ-hxj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RWv-UD-ZQt" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="rUb-AO-X7G"/>
+                            <constraint firstAttribute="centerX" secondItem="ebk-I4-P88" secondAttribute="centerX" type="user" id="zjj-ir-Ep1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choices" id="WN9-ju-Qtd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAR-1s-cqx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-450"/>
+        </scene>
+        <!--Nav Detail View Controller - Letter-->
+        <scene sceneID="ddH-VJ-Pzu">
+            <objects>
+                <viewController storyboardIdentifier="NavDetailVC" id="YuW-Iy-i0Q" customClass="SCSNavDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wwB-kW-XNX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-UZ-Bca">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="1Ub-kh-l4O"/>
+                                    <constraint firstAttribute="width" constant="75" id="2ka-KS-7W2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1IE-UZ-Bca" firstAttribute="top" secondItem="wwB-kW-XNX" secondAttribute="top" constant="134" id="Tdm-Nt-MTv"/>
+                            <constraint firstAttribute="centerX" secondItem="1IE-UZ-Bca" secondAttribute="centerX" type="user" id="glT-vu-hlz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Letter" id="da9-eM-2eY"/>
+                    <connections>
+                        <outlet property="displayedLetterLabel" destination="1IE-UZ-Bca" id="Sch-jf-D5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRb-QA-4fa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="-450"/>
+        </scene>
+        <!--Navigation Controller - D - F-->
+        <scene sceneID="t0g-15-3oz">
+            <objects>
+                <navigationController id="7Lf-qM-TlK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="D - F" id="ezC-d3-86b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fIj-JR-zhX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h40-jV-nyT" kind="relationship" relationship="rootViewController" id="h1U-mv-Jzu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vaq-Zf-6np" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="-450"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6Mj-Jj-le0">
+            <objects>
+                <tabBarController id="0Q4-Ac-S2h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="RT0-1D-AWs">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="3Mu-6T-Brw"/>
+                        <segue destination="7Lf-qM-TlK" kind="relationship" relationship="viewControllers" id="Ba0-qd-ZOp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSc-QV-FEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="-726"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SCSDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SCSDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="delegate"/>
+                <relationship kind="outlet" name="displayedLetterLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SCSNavDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SCSNavDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="displayedLetterLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SCSNavViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SCSNavViewController.h"/>
+        </class>
+        <class className="SCSViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SCSViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sampleAButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="sampleBButtonPressed:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Caj-Ek-CH6"/>
+    </inferredMetricsTieBreakers>
+</document>

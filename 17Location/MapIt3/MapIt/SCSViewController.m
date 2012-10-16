@@ -1,0 +1,38 @@
+#import "SCSViewController.h"
+#import "SCSPlace.h"
+#import "SCSPlacesOfInterest.h"
+#import <MapKit/MapKit.h>
+
+@interface SCSViewController ()<MKMapViewDelegate>
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic)SCSPlacesOfInterest *places;
+@end
+
+@implementation SCSViewController
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.places = [[SCSPlacesOfInterest alloc] init];
+    self.mapView.region = MKCoordinateRegionMakeWithDistance([self.places centerOfMap],500, 500);
+    [self.mapView addAnnotations:self.places.annotations];
+    [self.mapView addOverlay:[self.places happyTrail]];
+}
+- (MKAnnotationView *)mapView:(MKMapView *)mapView
+           viewForAnnotation:(id<MKAnnotation>)annotation {
+    MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc]
+                                           initWithAnnotation:annotation
+                                           reuseIdentifier:@"pinView"];
+    annotationView.pinColor = ((SCSPlace *)annotation).pinColor;
+    annotationView.animatesDrop = YES;
+    annotationView.canShowCallout = YES;
+    return annotationView;
+}
+- (MKOverlayView *)mapView:(MKMapView *)mapView
+            viewForOverlay:(id<MKOverlay>)overlay {
+    MKPolylineView *lineView = [[MKPolylineView alloc]
+                                     initWithPolyline:[self.places happyTrail]];
+    lineView.strokeColor = [UIColor blueColor];
+    lineView.lineDashPattern = @[@4, @6];
+    lineView.lineWidth = 2;
+    return lineView;
+}
+@end
